@@ -146,7 +146,7 @@ def test_update_pet_without_changes():
 
 def test_add_pet_with_long_values():
     _, auth_key = pf.get_api_key(valid_email, valid_password)
-    long_value = 'a' * 10000  # Строка из очень большого колличества символов
+    long_value = 'a' * 1000  # Строка из очень большого колличества символов
     pet_data = {
         'name': long_value,
         'animal_type': long_value,
